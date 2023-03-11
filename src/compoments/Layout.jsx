@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom"
 import image from "../img/header.jpg"
+
 function Layout() {
     return (
         <div>

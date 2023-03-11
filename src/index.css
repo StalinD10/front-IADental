@@ -1,5 +1,4 @@
 :root {
-
   --primario: #1073BA;
   --secundario: #00DA55;
   --gris: #3b3b3b;
@@ -329,15 +328,138 @@ y con transition-duration el tiempo de la animacion
   font-weight: 700;
   border: none;
   border-radius: 3rem 2.5rem;
- 
+
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   .button-login {
     width: 20%;
   }
 }
+
 .button-login:hover {
 
   background-color: #17517a;
+}
+
+
+.button-form {
+  padding: 1rem;
+  height: 18%;
+  width: 80%;
+  border-radius: 0.8rem;
+  background-color: var(--primario);
+  color: var(--blanco);
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem;
+  margin: 1rem 0 0 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .button-form {
+    width: 60%;
+  }
+}
+
+.button-form:hover {
+  background-color: #17517a;
+}
+
+/*LOGIN FORM*/
+
+.login-form {
+  background-image: linear-gradient(to bottom, transparent 50%, var(--blanco) 0%), url(./img/ia.jpg);
+  background-size: 100%, 150rem;
+  background-position: center left;
+  background-repeat: repeat, no-repeat;
+
+}
+
+
+@media (min-width: 768px) {
+  .login-form {
+    background-image: linear-gradient(to left, transparent 50%, var(--blanco) 0%), url(./img/ia.jpg);
+    background-repeat: repeat, no-repeat;
+
+  }
+}
+
+@media (min-width: 1600px) {
+  .login-form {
+    background-size: 100%, 210rem;
+  }
+}
+
+.card-login {
+  display: grid;
+  grid-template-rows: repeat(2, 40rem);
+  align-items: center;
+  row-gap: var(--separacion);
+
+}
+
+@media (min-width: 768px) {
+  .card-login {
+    grid-template-rows: unset;
+    row-gap: unset;
+
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+    padding: calc(var(--separacion)*2) 0;
+
+  }
+}
+
+.contenido-login {
+  grid-row: 2/3;
+  align-items: center;
+  color: var(--blanco);
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: var(--separacion);
+
+}
+
+@media (min-width: 768px) {
+  .contenido-login {
+    padding-bottom: 0;
+  }
+}
+
+.titulo-informacion h2 {
+  font-size: 4rem;
+
+}
+
+.titulo-informacion p {
+  font-size: 2rem;
+  line-height: 2;
+}
+
+.input-login {
+  text-align: center;
+  font-size: 1.5rem;
+  width: 70%;
+  height: 4rem;
+  margin: 1rem;
+  border-radius: 0.8rem;
+  border-color: var(--gris);
+}
+
+.registro-link {
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.modal-buttons{
+  font-size: 1.5rem;
+}
+.input-nueva {
+ 
+  font-size: 1.5rem;
+  
 }
