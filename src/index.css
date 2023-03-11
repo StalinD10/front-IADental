@@ -370,9 +370,9 @@ y con transition-duration el tiempo de la animacion
 /*LOGIN FORM*/
 
 .login-form {
-  background-image: linear-gradient(to bottom, transparent 50%, var(--blanco) 0%), url(./img/ia.jpg);
-  background-size: 100%, 150rem;
-  background-position: center left;
+  background-image: linear-gradient(to bottom, transparent 50%, var(--blanco) 0%), url(./img/periapical.jpg);
+  background-size: 100%, 135rem;
+  background-position: center top left ;
   background-repeat: repeat, no-repeat;
 
 }
@@ -380,7 +380,7 @@ y con transition-duration el tiempo de la animacion
 
 @media (min-width: 768px) {
   .login-form {
-    background-image: linear-gradient(to left, transparent 50%, var(--blanco) 0%), url(./img/ia.jpg);
+    background-image: linear-gradient(to left, transparent 50%, var(--blanco) 0%), url(./img/periapical.jpg);
     background-repeat: repeat, no-repeat;
 
   }

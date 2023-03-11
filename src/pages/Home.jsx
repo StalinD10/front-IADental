@@ -1,7 +1,15 @@
+import { useNavigate } from "react-router-dom"
 import icon from "../img/icon1.png"
 import icon2 from "../img/icon2.png"
 import icon3 from "../img/icon3.png"
+
 function Home() {
+
+    const navigate = useNavigate();
+
+    function handleClick() {
+        navigate('/login');
+      }
   return (
     <div>
       <section class="contenedor">
@@ -46,7 +54,7 @@ function Home() {
         <div class="listado-redirigir-login">
             <div class="login ir-login">
                 <h3>Es necesario iniciar sesión o registrarte</h3>
-               <button className="button-login"> Iniciar sesión</button>
+               <button className="button-login" onClick={handleClick}> Iniciar sesión</button>
             </div>
             
         </div>
