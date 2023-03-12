@@ -16,24 +16,23 @@ function Home() {
         <div className="iconos">
             <div className="icono">
                  <img  src={icon} alt="imagen icono" />
-                <h3>Analiza tus radiografías de forma precisa</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa delectus,
-                    fuga blanditiis reprehenderit iusto accusamus laudantium magni voluptate placeat ducimus doloremque,
-                    officia, perspiciatis quasi sequi quisquam necessitatibus quod cupiditate soluta?</p>
+                <h3>Analiza tus radiografías</h3>
+                <p>Con la ayuda de la AI, ahora es posible analizar y diagnosticar posibles patógenos en los dientes de forma automática usando las radiográfias periapicapicales.
+                </p>
             </div>
             <div className="icono">
             <img  src={icon2} alt="imagen icono" />
                 <h3>Ahorra tiempo para dar diagnósticos</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa delectus,
-                    fuga blanditiis reprehenderit iusto accusamus laudantium magni voluptate placeat ducimus doloremque,
-                    officia, perspiciatis quasi sequi quisquam necessitatibus quod cupiditate soluta?</p>
+                <p>Con la implementación de la AI, ahorra tiempo dando un diagnóstico basado en las radiografías, permitiendo así 
+                    aprovechar el tiempo al máximo.
+                </p>
             </div>
             <div className="icono">
             <img  src={icon3} alt="imagen icono" />
                 <h3>Conoce la visión del proyecto</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa delectus,
-                    fuga blanditiis reprehenderit iusto accusamus laudantium magni voluptate placeat ducimus doloremque,
-                    officia, perspiciatis quasi sequi quisquam necessitatibus quod cupiditate soluta?</p>
+                <p>A un futuro, se espera que el proyecto pueda crecer, el modelo empleado para dar diagnósticos pueda expandirse y así permitir
+                    no solo dar diagnósticos de radiografías periapicales si no dar diagnósticos de todo tipo de radiografías.     
+                 </p>
             </div>
         </div>
     </section>
@@ -41,7 +40,7 @@ function Home() {
     <section className="sobre-IA">
         <div className=" contenedor informacion-IA">
             <div className="texto-informacion">
-                <h2 className="titulo-informacion degradado-verde">Sobre la IA</h2>
+                <h2 className="titulo-informacion degradado-verde">Sobre la AI</h2>
                 <p>IA en odontología puede ayudar a los dentistas a ofrecer diagnósticos más precisos y personalizados,
                      mejorar la eficiencia y la calidad del tratamiento, y brindar una experiencia más cómoda y conveniente para los pacientes.</p>
             </div>

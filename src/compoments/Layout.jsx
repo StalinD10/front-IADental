@@ -13,7 +13,7 @@ function Layout() {
                     </div>
                     <div className="texto-header">
                         <p className="tagline-periapical">Diagnósticos automáticos</p>
-                        <h1 className="nombre-periapical degradado-verde">Dental IA Radiografías Periapicales</h1>
+                        <h1 className="nombre-periapical degradado-verde">Dental AI Radiografías Periapicales</h1>
                         <p className="descripcion-periapical"> Las radiografías ahora pueden ser diagnosticadas de manera automática</p>
                        
                     </div>

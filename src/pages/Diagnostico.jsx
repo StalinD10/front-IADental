@@ -117,6 +117,7 @@ function Diagnostico(props) {
     </div>
   ));
 
+  console.log(thumbs)
   useEffect(
     () => () => {
       files.forEach(file => URL.revokeObjectURL(file.preview));
@@ -131,24 +132,45 @@ function Diagnostico(props) {
       {file.path} - {file.size} bytes
     </li>
   ));
+
+
+  async function handleEnviar() {
+    try {
+      const respuesta = await fetch(
+        `${variableNoEditable}/${idPerson},${period}`,
+        {
+          method: "POST",
+          mode: "cors",
+          headers: {
+            "Content-Type": "application/json",
+          body: JSON.stringify(files),
+        }
+      }
+      );
+      
+    } catch (error) {
+      console.error(error);
+         }
+    return null;
+  }
   return (
     <div>
       <section className="contenedor">
         <div className="iconos">
             <div className="icono">
                  <img  src={icon} alt="imagen icono" />
-                <h3>Verifica el formato de la radiografía</h3>
+                <h3>1. Verifica el formato de la radiografía</h3>
                 <p>Asegúrate que la imagen de tu radiografía periapical esté en  los siguientes formatos: PNG, JPG, o JPEG.</p>
             </div>
             <div className="icono">
             <img  src={icon3} alt="imagen icono" />
-                <h3>Sube o arrastra la radiografía</h3>
+                <h3>2. Sube o arrastra la radiografía</h3>
                 <p>Puedes arrastrar la imagen, usando "Drag and Drop", o simplemente elegir la opción de selector de imágenes 
                   para seleccionar y subir tu radiografía</p>
             </div>
             <div className="icono">
             <img  src={icon2} alt="imagen icono" />
-                <h3>Click en diagnosticar</h3>
+                <h3>3. Click en diagnosticar</h3>
                 <p>Una vez subida la imagen, puedes obtener el diagnóstico haciendo click en diagnosticar.</p>
             </div>
         </div>
@@ -165,7 +187,7 @@ function Diagnostico(props) {
 
         </div>
         <div className='text-center'>
-          <Button className="modal-buttons my-5" variant="primary" disabled={files.length === 0} id="diagnosticarButton" onClick={open}>
+          <Button className="modal-buttons my-5" variant="primary" disabled={files.length === 0} id="diagnosticarButton" onClick={handleEnviar}>
             Diagnosticar
           </Button>
         </div>
