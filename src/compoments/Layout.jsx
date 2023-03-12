@@ -20,7 +20,7 @@ function Layout() {
                 </div>
             </div>
             <Outlet/>
-            <footer class="footer">
+            <footer className="footer">
         <p>Todos los derechos reservados</p>
     </footer>
         </div>

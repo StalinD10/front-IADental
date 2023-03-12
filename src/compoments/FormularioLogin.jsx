@@ -12,12 +12,12 @@ function FormularioLogin() {
 
   return (
     <div>
-      <section class="login-form">
+      <section className="login-form">
 
-        <div class="contenedor card-login">
+        <div className="contenedor card-login">
 
-          <div class="contenido-login">
-            <h2 class="titulo-informacion degradado-verde">Iniciar Sesión</h2>
+          <div className="contenido-login">
+            <h2 className="titulo-informacion degradado-verde">Iniciar Sesión</h2>
             <input type="text" required={true} id="username" name="username" className="input-login" placeholder="Usuario" />
             <input type="password" required={true} id="password" name="password" className="input-login" placeholder="Contraseña" />
             <input type="submit" value="Iniciar Sesión" className="button-form" />

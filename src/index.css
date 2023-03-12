@@ -4,7 +4,7 @@
   --gris: #3b3b3b;
   --blanco: #FFFFFF;
   --negro: #1f1f1f;
-  --girsClaro: #e1e1e1;
+  --girsClaro: #f5f0f0;
   --separacion: 5rem;
 
   --fuentePrincipal: 'Roboto', sans-serif;
@@ -462,4 +462,34 @@ y con transition-duration el tiempo de la animacion
  
   font-size: 1.5rem;
   
+}
+
+.dropzone {
+  border:2px dashed blue;
+  margin-bottom:30px;
+}
+
+.button {
+  text-align:center;
+}
+
+#send {
+  background-color:blue;
+  color:#fff;
+  border:1px solid;
+  padding:10px;
+  transition:.3s;
+  border-radius:5px;
+  cursor:pointer;
+}
+/*  */
+#send:active {
+  background-color:#fff;
+  color:blue;
+}
+
+.dz-remove {
+  background-color:blue;
+  color:#fff;
+  text-decoration:none;
 }
