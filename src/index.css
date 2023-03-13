@@ -493,3 +493,43 @@ y con transition-duration el tiempo de la animacion
   color:#fff;
   text-decoration:none;
 }
+
+.spinner {
+  border: 5px solid rgba(0, 0, 0, 0.3);
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  border-left-color: #20aa9f;
+  margin: 0 auto;
+  margin-top: 20px;
+  animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.swal-boton-grande .swal2-confirm {
+  
+  font-size: 1.4rem !important;
+}
+
+.card {
+   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 20px;
+  background-color: rgba(95, 120, 231, 0.11);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+  backdrop-filter: blur(15px);
+}

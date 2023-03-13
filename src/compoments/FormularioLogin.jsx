@@ -7,9 +7,20 @@ import { useState } from 'react';
 function FormularioLogin() {
 
   const [show, setShow] = useState(false);
+  const [data, setData] = useState("");
+  const [dataPassword, setDataPassword] = useState("");
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  function handleChange(event) {
+    setData(event.target.value);
+  }
+  function handleChange2(event) {
+    setDataPassword(event.target.value);
+  }
+
+ console.log(data)
+ console.log(dataPassword)
   return (
     <div>
       <section className="login-form">
@@ -18,8 +29,8 @@ function FormularioLogin() {
 
           <div className="contenido-login">
             <h2 className="titulo-informacion degradado-verde">Iniciar Sesión</h2>
-            <input type="text" required={true} id="username" name="username" className="input-login" placeholder="Usuario" />
-            <input type="password" required={true} id="password" name="password" className="input-login" placeholder="Contraseña" />
+            <input type="text" required={true} id="username" name="username" className="input-login" placeholder="Usuario" onChange={handleChange} />
+            <input type="password" required={true} id="password" name="password" className="input-login" onChange={handleChange2} placeholder="Contraseña" />
             <input type="submit" value="Iniciar Sesión" className="button-form" />
             <Button className="registro-link" variant="link" onClick={handleShow}>¿No tienes cuenta?</Button>
           </div>
